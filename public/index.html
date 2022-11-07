@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./CSS/style.css" />
+        <!-- <link rel="stylesheet" href="./assets/CSS/bootstrap-5.2.1-dist/css/bootstrap.css"> -->
+
+        <title>B19DCDT043 Nguyen Dinh Dai</title>
+    </head>
+    <body>
+        <div id="main">
+            <div class="data">
+                <div class="col col-3 tem bg-data bg0">
+                    <div class="text-data">
+                        <h2>Nhiet Do</h2>
+                    </div>
+                    <div class="num-data">
+                        <h2 class="num">20</h2>
+                    </div>
+                </div>
+                <div class="col col-3 hum bg-data bg1">
+                    <div class="text-data">
+                        <h2>Do Am</h2>
+                    </div>
+                    <div class="num-data">
+                        <h2 class="num">20</h2>
+                    </div>
+                </div>
+                <div class="col col-3 light bg-data bg2">
+                    <div class="text-data">
+                        <h2>Anh Sang</h2>
+                    </div>
+                    <div class="num-data">
+                        <h2 class="num">20</h2>
+                    </div>
+                </div>
+                <!-- <div class="col col-4 gas bg-data bg3">       
+                <div class="text-data">
+                    <h2>Khi Gas</h2>
+                </div>
+                <div class="num-data">
+                    <h2 class="num">20</h2>
+                </div>
+            </div> -->
+            </div>
+            <!-- Toast -->
+            <div id="toast"></div>
+            <!-- End Toast -->
+            <!-- <div class="clear"></div> -->
+            <div class="visual" style="height: 60%">
+                <div class="col chart">
+                    <!-- <script src="https://code.highcharts.com/highcharts.js"></script>
+                    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+                    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+                    <figure class="highcharts-figure">
+                        <div id="container"></div>
+                    </figure> -->
+                    <canvas id="myChart"></canvas>
+                </div>
+                <!-- <script src="./assets/index.js"></script> -->
+                <div class="col but-led">
+                    <div class="box box-top">
+                        <div class="regular-btn">
+                            <button class="btn btn-on">ON</button>
+                            <button class="btn btn-off">OFF</button>
+                        </div>
+                        <img style="width: 40%" class="light-img light-bulb-0" src="./img/light/light-off-img.png" alt="" />
+                    </div>
+                    <div class="box box-bottom">
+                        <div class="container-tog">
+                            <div class="toggle">
+                                <div class="toggle-btn"></div>
+                            </div>
+                        </div>
+                        <img style="width: 40%" class="light-img light-bulb-1" src="./img/light/light-off-img.png" alt="" />
+                    </div>
+                </div>
+                <!-- modal on led 0 -->
+                <div class="modal-on-0 hidden">
+                    <button class="close-modal">x</button>
+                    <h2>Thông Báo! <br /><br /></h2>
+                    <p class="rp-on">Ban co muon bat den khong?</p>
+                    <button class="ok-on-0">Ok</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+
+                <!-- modal off led 0-->
+                <div class="modal-off-0 hidden">
+                    <button class="close-modal">x</button>
+                    <h2>
+                        Thông Báo! <br />
+                        <br />
+                    </h2>
+                    <p class="rp-off">Ban co muon tat den khong?</p>
+                    <button class="ok-off-0">Ok</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+
+                <!-- modal on led 1 -->
+                <div class="modal-on-1 hidden">
+                    <button class="close-modal">x</button>
+                    <h2>Thông Báo! <br /><br /></h2>
+                    <p class="rp-on">Ban co muon bat den khong?</p>
+                    <button class="ok-on-1">Ok</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+
+                <!-- modal off led 1-->
+                <div class="modal-off-1 hidden">
+                    <button class="close-modal">x</button>
+                    <h2>
+                        Thông Báo! <br />
+                        <br />
+                    </h2>
+                    <p class="rp-off">Ban co muon tat den khong?</p>
+                    <button class="ok-off-1">Ok</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+                <div class="overlay hidden"></div>
+                <!-- end led 1 -->
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- <script src="/socket.io/socket.io.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.3/socket.io.min.js"></script>
+        <script type="module" src="./client.js"></script>
+    </body>
+</html>
